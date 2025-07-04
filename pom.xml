@@ -17,7 +17,7 @@
         <allure.version>2.15.0</allure.version>
         <lang3.version>3.11</lang3.version>
         <selenium.version>4.21.0</selenium.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
