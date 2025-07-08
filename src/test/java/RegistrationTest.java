@@ -1,4 +1,5 @@
 import kz.yandex.client.Client;
+import kz.yandex.client.ClientLogin;
 import kz.yandex.client.ClientSteps;
 import kz.yandex.BrowserConfig;
 import org.junit.After;
@@ -69,7 +70,7 @@ public class RegistrationTest extends BrowserConfig {
             try {
                 RestAssured.baseURI = ClientSteps.baseURL;
                 accessToken = ClientSteps
-                        .loginClient(new Client(client.getEmail(), client.getPassword()))
+                        .loginClient(new ClientLogin(client.getEmail(), client.getPassword()))
                         .then()
                         .extract()
                         .path("accessToken");
